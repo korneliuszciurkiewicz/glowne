@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+   
+   
+   
+   <style>html, body, .grid-container { height: 100%; margin: 0; }
+   
+
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1.2fr 0.4fr 1.4fr 1.3fr 0.7fr;
+          grid-template-rows: 0.3fr 1.7fr 1fr;
+          gap: 0px 0px;
+          grid-template-areas:
+            "top-menu top-menu top-menu top-menu top-menu"
+            "menuLista GAP-left main-field main-field GAP-right"
+            "menuLista GAP-left main-field main-field GAP-right"
+            "butt-menu butt-menu butt-menu butt-menu butt-menu";
+            font-family: 'Nunito', sans-serif;
+
+
+        }
+        
+        .menuLista {
+          display: grid;
+          grid-template-columns: 1.7fr 0.6fr;
+          grid-template-rows: 1fr 1fr fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.1fr;
+          gap: 0px 0px;
+          /* grid-area: menuLista; */
+          left: 40px;
+        }
+        
+        .lista1 {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          gap: 0px 0px;
+          grid-template-areas:
+            ". . .";
+          grid-area: 1 / 1 / 2 / 2;
+        }
+        
+        .lista2 { grid-area: 2 / 1 / 19 / 2; color:#003A5A;}
+        
+        .lista3 { grid-area: 3 / 1 / 4 / 2; color:#003A5A;}
+        
+        .lista4 { grid-area: 4 / 1 / 5 / 2; color:#003A5A;}
+        
+        .lista5 { grid-area: 5 / 1 / 6 / 2; color:#003A5A;}
+        
+        .lista6 { grid-area: 6 / 1 / 7 / 2; color:#003A5A;}
+        
+        .lista7 { grid-area: 7 / 1 / 8 / 2; color:#003A5A;}
+        
+        .lista8 { grid-area: 8 / 1 / 9 / 2; color:#003A5A;}
+        
+        .lista9 { grid-area: 9 / 1 / 10 / 2; color:#003A5A;}
+        
+        .lista10 { grid-area: 10 / 1 / 11 / 2; color:#003A5A;}
+        
+        .lista11 { grid-area: 11 / 1 / 12 / 2; color:#003A5A;}
+        
+        .lista12 { grid-area: 12 / 1 / 13 / 2; color:#003A5A;}
+        
+        .lista13 { grid-area: 13 / 1 / 14 / 2; color:#003A5A;}
+        
+        .lista14 { grid-area: 14 / 1 / 15 / 2; color:#003A5A;}
+        
+        .lista15 { grid-area: 15 / 1 / 16 / 2; color:#003A5A;}
+        
+        .lista16 { grid-area: 16 / 1 / 17 / 2; color:#003A5A;}
+        
+        .lista17 { grid-area: 17 / 1 / 18 / 2; color:#003A5A;}
+        
+        .Arrow {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 0px 0px;
+          grid-template-areas:
+            ". . ."
+            ". . .";
+          grid-area: 1 / 2 / 19 / 3;
+          right: 202px;
+    top: 257px;
+        }
+        
+        .lista18 { grid-area: 18 / 1 / 19 / 2; }
+        
+        .GAP-left {
+          display: grid;
+          grid-template-columns: 0.8fr 0.8fr;
+          grid-template-rows: 3.5fr;
+          gap: 0px 0px;
+          grid-template-areas:
+            ". .";
+          grid-area: GAP-left;
+        }
+        
+        .main-field {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 0.4fr 0.3fr 2.4fr;
+          gap: 0px 0px;
+          grid-template-areas:
+            "rowMain1 rowMain1"
+            "rowMain2 rowMain2"
+            "LewaKolumna PrawaKolumna";
+          grid-area: main-field;
+        }
+        
+        .rowMain1 { grid-area: rowMain1; }
+        
+        .rowMain2 { grid-area: rowMain2; }
+        
+        .LewaKolumna {
+          display: grid;
+          grid-template-columns: 1fr;
+          /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+          gap: 0px 0px;
+          grid-template-areas:
+            "LewaKolumnaRow1"
+            "LewaKolumnaRow2"
+            "LewaKolumnaRow3"
+            "LewaKolumnaRow4"
+            "LewaKolumnaRow5"
+            "LewaKolumnaRow6";
+          grid-area: LewaKolumna;
+        }
+        
+        .LewaKolumnaRow1 { grid-area: LewaKolumnaRow1; color:#003A5A;}
+        
+        .LewaKolumnaRow2 { grid-area: LewaKolumnaRow2; color:#003A5A;}
+        
+        .LewaKolumnaRow3 { grid-area: LewaKolumnaRow3; color:#003A5A;}
+        
+        .LewaKolumnaRow4 { grid-area: LewaKolumnaRow4; color:#003A5A;}
+        
+        .LewaKolumnaRow5 { grid-area: LewaKolumnaRow5; color:#003A5A;}
+        
+        .LewaKolumnaRow6 { grid-area: LewaKolumnaRow6; color:#003A5A;}
+        
+        .PrawaKolumna {
+          display: grid;
+          grid-template-columns: 1fr;
+          /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+          gap: 0px 0px;
+          grid-template-areas:
+            "RightKolumna1"
+            "RightKolumna2"
+            "RightKolumna3"
+            "RightKolumna4"
+            "RightKolumna5";
+          grid-area: PrawaKolumna;
+        }
+        
+        .RightKolumna1 { grid-area: RightKolumna1; color:#003A5A;}
+        
+        .RightKolumna2 { grid-area: RightKolumna2; color:#003A5A;}
+        
+        .RightKolumna3 { grid-area: RightKolumna3; color:#003A5A;}
+        
+        .RightKolumna4 { grid-area: RightKolumna4; color:#003A5A;}
+        
+        .RightKolumna5 { grid-area: RightKolumna5; color:#003A5A;}
+        
+        .GAP-right { grid-area: GAP-right; }
+        
+        .top-menu {
+          display: grid;
+    grid-template-columns: 2fr 1.4fr 0.8fr 0.8fr 0.9fr 0.8fr 0.6fr 0.7fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "top1 top2 top3 top4 top5 top6 top7 top8 top9";
+    grid-area: top-menu;
+    background-color: #003A5A;
+    height: 70px;
+    left: 0px;
+        }
+        
+        .top1 { grid-area: top1; color:white; }
+        
+        .top2 { grid-area: top2; color:white;}
+        
+        .top3 { grid-area: top3; color:white;     margin-top: 23px; margin-left: 10px; right: 100px;}
+        
+        .top4 { grid-area: top4; color:white;   margin-top: 23px; margin-left: 10px; right: 120px;}
+        
+        .top5 { grid-area: top5; color:white;  margin-top: 23px; margin-left: 10px; right: 160px;}
+        
+        .top6 { grid-area: top6; color:white;  margin-top: 23px; margin-left: 10px; right: 200px;}
+        
+        .top7 { grid-area: top7; color:white;  margin-top: 23px; margin-left: 10px;     right: 260px;}
+        
+        .top8 { grid-area: top8; color:white;  margin-top: 23px; margin-left: 10px;     right: 270px;}
+        
+        .top9 { grid-area: top9; color:white;   margin-top: 23px; margin-left: 10px;}
+        
+        .butt-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ".";
+  grid-area: butt-menu;
+  background-color: #003A5A;
+    height: 70px;
+    top: 200px;
+}
+
+        
+        /* For presentation only, no need to copy the code below */
+        .grid-container * {
+          /* border: 1px solid red; */
+          position: relative;
+        }
+        
+        .grid-container *:after {
+          /* content:attr(class); */
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="menuLista">
+            <div class="lista1"> Menu</div>
+            <div class="lista2">..........</div>
+            <div class="lista3">Aktualności</div>
+            <div class="lista4">Branże</div>
+            <div class="lista5">Produkty</div>
+            <div class="lista6">Usługi</div>
+            <div class="lista7">Referencje</div>
+            <div class="lista8">Konktakt</div>
+            <div class="lista9">.........</div>
+            <div class="lista10">O firmie</div>
+            <div class="lista11">Nagrody</div>
+            <div class="lista12">Relacje</div>
+            <div class="lista13">inwestorskie</div>
+            <div class="lista14">Partnerzy</div>
+            <div class="lista15">Kariera</div>
+            <div class="lista16">.........</div>
+            <div class="lista17"><img src="a.png"> </div>
+          <div class="Arrow"><img src="strzalka.png"> </div>
+          <div class="lista18"><img src="b.png"> </div>
+        </div>
+        <div class="GAP-left"></div>
+        <div class="main-field" style="top: 60px; right: 178px;">
+          <div class="rowMain1"><center><img src="dom.png"> O FIRMIE </center></div>
+          <div class="rowMain2"><img src="kropki.png" style="margin-top: 30px;"> <br><br><br> </div>
+          <div class="LewaKolumna" style="margin-right: 5%;">
+            <div class="LewaKolumnaRow1"> 
+              SIMPLE - z nami biznes jest prostszy!
+                <br></div>
+            <div class="LewaKolumnaRow2">
+                <img src="ciam.png">
+            </div>
+            <div class="LewaKolumnaRow3" style="text-align: justify;">  
+                PONAD 24 LATA DOŚWIADCZENIA <br>
+                SIMPLE S.A. jest wiodącym w kraju  producentem rozwiązań 
+                informatycznych do wspomagania               zarządzania
+                przedsiębiorstwami. Będąc producentem     oprogramowania,
+                dajemy pełną gwarancję dotyczącą     jego działania oraz
+                dostosowania do zmieniających się warunków biznesowych i 
+                przepisów prawa oraz szybkiej reakcji na zmieniające się
+                potrzeby klientów.
+                <p></p>
+            </div>
+            <div class="LewaKolumnaRow4"  style="text-align: justify;">
+                PONAD 3 500 KLIENTÓW<br>
+                Działamy na polskim rynku producentów rozwiązań klasy ERP
+                już od ponad 24 lat! Dostarczamy rozwiązania, które sprawdziły
+                się w wielu zróżnicowanych branżach i doskonale znamy biznes
+                naszych klientów. Nasz oferta dostosowana jest do potrzeb
+                głównych sektorów polskiego rynku. Ze współpracy z nami
+                skorzystało już blisko ponad 3,5 tysiąca firm. 
+                <p></p>
+            </div>
+            <div class="LewaKolumnaRow5"  style="text-align: justify;">
+                PONAD 23 000 UŻYTKOWNIKÓW<br>
+                Nasze produkty zawsze charakteryzowały się udanym
+                połączeniem: innowacyjności, szerokiej funkcjonalności,
+                adaktowalności i skalowalności jak również dbałości o rozsądny
+                budżet, dostosowany do możliwości naszych Klientów. Dlatego
+                w 2010 roku liczba naszych użytkowników przekroczyła 25
+                tysiące.<br>
+                <p></p>
+            </div>
+            <div class="LewaKolumnaRow6"  style="text-align: justify;">
+                NASI ODBIORCY<br>
+                Odbiorcami naszych rozwiązań sa głównie firmy budowlane, 
+                
+                <p></p>
+            </div>
+        </div>
+        <div class="PrawaKolumna">
+            <div class="RightKolumna1"  style="text-align: justify;">
+                <p></p>
+                przedsiębiorstwa produkcyjne, uczelnie wyższe, jednostki
+                medyczne oraz firmy usługowe i handlowe. Widzimy i wspólnie
+                wykorzystujemy możliwości jakie daje proces integracji Polski z 
+                Unią Europejską.
+                <p></p>
+            </div>
+            <div class="RightKolumna2"  style="text-align: justify;">
+                ZINTEGROWANE ROZWIĄZANIA DLA KAŻDEJ BRANŻY <br>
+                SIMPLE posiada kompleksowe rozwiązania dedykowane naj-
+                większym sektorom naszej gospodarki. W naszej ofercie znajdą
+                Państwo rozwiązania dla firm o różnych profilach działaności
+                (produkcyjnym, budowlanym, usługowym, handlowym), dla
+                uczelni wyższych, jednostek medycznych, instytutów badaw-
+                czych czy jesdnostek rządowych.
+                Nasze doświadczenia obejmują realizacje systemów dedyko-
+                wanych pod indywidualne potrzeby klientów oraz integrację
+                wszelkich rozwiązań wspomagających zarządzanie.
+                <p></p>
+            </div>
+            <div class="RightKolumna3"  style="text-align: justify;">
+                CERTYFIKATY I REKOMENDACJE <br>
+                SIMPLE S.A posiada istotne na polskim rynku rekomendacje 
+                od Polskiego Towarzystwa Ekonomicznego oraz Stowarzysze-
+                nia Księgowych w Polsce, które potwierdzają, że oprogramo-
+                wanie SIMPLE wprowadziło i stosuje system zarządzania
+                jakością ISO 90001:2008 w zakresie: projektowania, produkcji i
+                wdrażenia systemów informatycznych, a także sprzedaż i insta-
+                lacja sprzętu komputerowego oraz szkolenia.
+                <p>
+             
+            </div>
+            <div class="RightKolumna4"  style="text-align: justify;">
+                Oprogramowanie SIMPLE zostało wyróżnione również:
+                GAZELĄ BIZNESU, MEDALEM EUROPEJSKIM, statuetką Top-
+                Builder oraz posiada status Microsoft Golden Certified Partner
+                oraz BRE Partner Gold CERTEFICATE. Osiągnięte wyniki po-
+                zwoliły zająć SIMPLE S.A 30 miejsce w rakingu DIAMENTÓW 
+                FORBESA dla województwa mazowieckiego. Firma SIMPLE
+                otrzymała również tytuł "Najlepszy dostawca IT dla przemysłu
+                2010 w kategorii ERP/mrp ii (system polski)-producent".
+                <p></p>
+            </div>
+            <div class="RightKolumna5"  style="text-align: justify;">
+                ZAWSZE BLISKO CIEBIE<br>
+                SIMPLE S.A. wraz z Partnerami prowadzi szeroko zakrojoną
+                sprzedaż do Klientów na terenie całego kraju. Chcemy być jak
+                najbliżej naszych klientów, dlatego wciąż dążymy do 
+                poszerzenia sieci naszej sprzedaży. Unią Europejską. 
+                <p></p> 
+
+            </div>
+        </div>
+     
+        </div>
+        <div class="GAP-right"></div>
+        <div class="top-menu">
+            <div class="top1"></div>
+            <div class="top2"><img src="simple.png" style="background-color: white; -webkit-box-shadow: -2px 7px 8px 0px rgba(0,0,0,0.51); 
+              box-shadow: -2px 7px 8px 0px rgba(0,0,0,0.15);"></div>
+            <div class="top3">Aktualności</div>
+            <div class="top4">Branże</div>
+            <div class="top5">Produkty</div>
+            <div class="top6">Usługi</div>
+            <div class="top7">Referencje</div>
+            <div class="top8">Kontakt</div>
+            <div class="top9"><img src="lupa.png" style="left: 153px; bottom: 3px;"></div>
+        </div>
+        <div class="butt-menu" style="    top: 179px; bottom: 1px;"></div>
+
+      </div>  
+
+      <img src="shadow.png" style="position: absolute; top: 0px; z-index: -1; height: 1500px; width: 250px;">
+</body>
+</html>
